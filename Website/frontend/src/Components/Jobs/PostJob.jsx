@@ -416,6 +416,7 @@ const PostJob = () => {
               required
               className="mt-1 w-full border border-gray-300 rounded-md px-4 py-2 bg-white focus:outline-none focus:ring-2 focus:ring-[#0077B6]"
             >
+            
               <option value="">Select Type</option>
               <option value="Full-Time">Full-Time</option>
               <option value="Part-Time">Part-Time</option>
