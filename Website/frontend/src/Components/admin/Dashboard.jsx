@@ -15,6 +15,8 @@ import Candidates from './Candidates';
 import JobPosts from './JobPosts';
 import Leads from './Leads';
 import Payments from './Payments';
+import AddCategory from './AddCategory';
+import SubCategory from './SubCategory';
 // import Content from './Content';
 // import Settings from './Settings';
 
@@ -32,9 +34,9 @@ const Dashboard = () => {
     { id: 'candidates', icon: <FaUser />, label: 'Candidates' },
     { id: 'jobPosts', icon: <FaFileAlt />, label: 'Job Posts' },
     { id: 'leads', icon: <FaChartLine />, label: 'Leads' },
+    { id: 'AddCategory', icon: <FaEdit />, label: 'AddCategory' },
+    { id: 'SubCategory', icon: <FaCog />, label: 'SubCategory' },
     { id: 'payments', icon: <FaMoneyBillWave />, label: 'Payments' },
-    // { id: 'content', icon: <FaEdit />, label: 'Content' },
-    // { id: 'settings', icon: <FaCog />, label: 'Settings' },
   ];
 
   const renderContent = () => {
@@ -49,12 +51,12 @@ const Dashboard = () => {
         return <JobPosts />;
       case 'leads':
         return <Leads />;
-      case 'payments':
+      case 'AddCategory':
+        return <AddCategory/>;
+      case 'SubCategory':
+        return <SubCategory/>;
+        case 'payments':
         return <Payments />;
-      case 'content':
-        return <Content />;
-      case 'settings':
-        return <Settings />;
       default:
         return <DashboardOverview />;
     }
