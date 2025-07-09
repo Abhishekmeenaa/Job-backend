@@ -40,9 +40,12 @@ const createSubcategory = async (req, res) => {
     // });
 
     // Create new subcategory with image URL
+    console.log(category, "subcategory");
+    
     const newSubcategory = new Subcategory({
       name,
       category,
+      
     //   image: uploadResponse.url, // Save only the image URL
     });
 
